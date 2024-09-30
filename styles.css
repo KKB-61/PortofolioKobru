@@ -10,6 +10,7 @@ body {
 header {
     background-color: #333;
     color: white;
+    /* width: 100%; */
     padding: 20px 0;
     text-align: center;
     position: relative; /* For proper positioning of image */
@@ -74,12 +75,16 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
 }
 
 footer a {
     color: #007BFF;
     text-decoration: none;
+}
+
+@media (max-width:1000px) {
+    iframe{
+        width: 100%;
+        /* transform: scale(0.80); */
+    }
 }
